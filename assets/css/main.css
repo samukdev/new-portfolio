@@ -1,16 +1,226 @@
 *, *::after, *::before{
   box-sizing: border-box;
+  font-family: Open Sans;
 }
 
 body{
   background-color: #202020;
   color: #f5f5f5;
+  overflow-x: hidden;
   
 }
 
+/* NAVBAR*/
 nav ul li {
   display: inline;
 }
+nav ul li a{
+  max-height: 2rem;
+}
+.navbar{
+  z-index: 100;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.bg-sticky{
+  z-index: 2;
+  animation: slideTopBottom 0.2s ease-in-out;
+  width: 100%;
+  height: 4rem;
+  background: #303030;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+  display: none;
+}
+.sticky-active{
+  display: block;
+}
+
+
+/* HOME */
+#home{
+  padding-top: 6rem;
+  background: url(/assets/img/bg_mobile.png) no-repeat;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  
+
+}
+#home h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 140%;
+  letter-spacing: 5%;
+  margin-bottom: 1rem;
+}
+
+#home h3{
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 150%;
+  letter-spacing: 15%;
+  color: #606060;
+}
+
+/* Prévia Portfolio */
+.header-portfolio{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#card-container{
+  display: flex;
+  overflow-x: auto;
+  padding-right: 20rem;
+
+}
+.card-projeto{
+  height: 35vh;
+  min-width: 25vh;
+  margin-right: 2rem;
+  background-color: lightcoral;
+  border-radius: 1rem;
+  background: url(/assets/img/cards/1.png);
+  background-position: center;
+  background-size: cover;
+}
+.finalspace{
+  height: 35vh;
+  min-width: 0.05rem;
+}
+
+/* ABOUT ME */
+.me-photo{
+  border-radius: 50%;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+}
+.card-me{
+  background: #252525;
+}
+.media-links{
+  letter-spacing: 10%;
+  line-height: 200%;
+}
+.media-links svg{
+  margin-right: 1rem;
+}
+.coluna-imagem{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.coluna-imagem img{
+  border-radius: 50%;
+}
+
+#aboutmecontent{
+  padding: 3rem;
+}
+#aboutmecontent h1{
+  font-weight: 600;
+  font-size: 1.75rem;
+  letter-spacing: 5%;
+}
+#aboutmecontent p{
+  padding-top: 1rem;
+  font-size: 1rem;
+  line-height: 160%;
+  letter-spacing: 5%;
+  color: #808080;
+}
+
+/* DUCKDEV */
+#duckdev{
+  background: #252525;
+}
+
+#duckdev columns{
+  display: flex;
+}
+#duckdev .button{
+  width: 100%;
+}
+
+/* HABILIDADES */
+
+table{
+  width: 100%;
+  text-align: center;
+  
+}
+.tablecontainer{
+  padding: 2rem 1rem;
+  background-color: #252525;
+}
+table td{
+  box-sizing: border-box;
+  width: 50%;
+  padding: 1rem 1rem;
+  margin: 2rem;
+}
+table tr{
+  margin: 5rem;
+  background-color: #252525;
+}
+.table-title{
+  font-size: 1.2rem;
+  vertical-align: middle;
+  align-self: center;
+  font-weight: 600;
+}
+
+.table-subtitle{
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.table-item svg{
+  font-size: 0.7rem;
+  padding: 0px;
+  margin: 0px;
+  color: #707070;
+}
+.star{
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+}
+
+.table-habilidade:nth-child(even) {}
+.table-habilidade:nth-child(odd) {background: #282828}
+
+#contrate img{
+  height: 50%;
+  width: 50%;
+}
+
+#contrate h1{
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+#contrate h3{
+  font-size: 1rem;
+  color: #808080;
+}
+
+#contrate .contatolinks{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+
 
 
 

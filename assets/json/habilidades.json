@@ -1,0 +1,44 @@
+{
+  "habilidades": [
+    {
+      "habilidade": "Javascript",
+      "nivel": 5
+    },
+    {
+      "habilidade": "CSS3",
+      "nivel": 5
+    },
+    {
+      "habilidade": "HTML5",
+      "nivel": 5
+    },
+    {
+      "habilidade": "VueJS",
+      "nivel": 4
+    },
+    {
+      "habilidade": "Bulma",
+      "nivel": 4
+    },
+    {
+      "habilidade": "Bootstrap",
+      "nivel": 3
+    },
+    {
+      "habilidade": "PHP",
+      "nivel": 2
+    },
+    {
+      "habilidade": "SQL",
+      "nivel": 2
+    },
+    {
+      "habilidade": "Figma",
+      "nivel": 5
+    },
+    {
+      "habilidade": "Photoshop",
+      "nivel": 3
+    }
+  ]
+}
