@@ -91,7 +91,7 @@ nav ul li a{
   margin-right: 2rem;
   background-color: lightcoral;
   border-radius: 1rem;
-  background: url(/assets/img/cards/1.png);
+  background: url(../img/cards/1.png);
   background-position: center;
   background-size: cover;
 }
