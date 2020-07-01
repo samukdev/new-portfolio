@@ -31,7 +31,7 @@ new Vue({
     // BACKGROUND NAVBAR ON SCROLL
     var vm = this;
     window.addEventListener('scroll', function () {
-
+      vm.menuIsVisible = false;
       if (window.pageYOffset > 10) {
         vm.menuIsSticky = true;
       }
