@@ -200,21 +200,21 @@ table tr{
 .table-habilidade:nth-child(even) {}
 .table-habilidade:nth-child(odd) {background: #282828}
 
-#contrate img{
+#contato img{
   height: 50%;
   width: 50%;
 }
 
-#contrate h1{
+#contato h1{
   font-size: 1.8rem;
   font-weight: 800;
 }
-#contrate h3{
+#contato h3{
   font-size: 1rem;
   color: #808080;
 }
 
-#contrate .contatolinks{
+#contato .contatolinks{
   display: flex;
   justify-content: center;
   align-content: center;
