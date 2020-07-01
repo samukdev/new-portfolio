@@ -2,7 +2,9 @@ new Vue({
   el: '#app',
   data: {
     habilidades: {},
-    idiomas: {}
+    idiomas: {},
+    menuIsVisible: false,
+    menuIsSticky: false
   },
   methods: {
     buscarJson: function () {
@@ -21,14 +23,14 @@ new Vue({
   mounted: function () {
     this.buscarJson();
     // BACKGROUND NAVBAR ON SCROLL
-    var nav = document.getElementById('bg-sticky');
+    var vm = this;
     window.addEventListener('scroll', function () {
 
       if (window.pageYOffset > 10) {
-        nav.classList.add('sticky-active');
+        vm.menuIsSticky = true;
       }
       else {
-        nav.classList.remove('sticky-active');
+        vm.menuIsSticky = false;
       }
 
     });

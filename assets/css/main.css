@@ -25,6 +25,7 @@ nav ul li a{
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
+  animation: slideTopBottom 0.2s ease-in;
 }
 .sticky {
   position: fixed;
@@ -218,6 +219,46 @@ table tr{
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+
+.menu-overlay{
+  width:  100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  z-index: 99;
+  box-sizing: border-box;
+  
+}
+
+.menu-overlay-menu{
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #d7d7d7;
+  color: #101010;
+  line-height: 300%;
+  letter-spacing: 8%;
+  padding: 2rem;
+  animation: slideRightLeft 0.35s ease-in;
+  box-shadow: -4px 0px 20px rgba(16, 16, 16, 0.2);
+}
+.menu-overlay-menu ul li:hover{
+  cursor: pointer;
+}
+.menu-overlay-esquerda{
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #101010;
+  opacity: 0;
+  
 }
 
 
