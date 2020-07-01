@@ -4,6 +4,7 @@ new Vue({
     habilidades: {},
     idiomas: {},
     links: {},
+    formacao: {},
     menuIsVisible: false,
     menuIsSticky: false
   },
@@ -23,6 +24,11 @@ new Vue({
         .then(r => r.json())
         .then(r => {
           this.links = r;
+        });
+      fetch("assets/json/formacao.json")
+        .then(r => r.json())
+        .then(r => {
+          this.formacao = r;
         });
     }
   },

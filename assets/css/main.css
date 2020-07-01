@@ -84,6 +84,9 @@ nav ul li a{
   padding-right: 20rem;
 
 }
+#card-container::-webkit-scrollbar{
+  display: none;
+}
 .card-projeto{
   height: 35vh;
   min-width: 25vh;

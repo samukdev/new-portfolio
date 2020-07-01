@@ -177,7 +177,24 @@
       </div>
     </section>
 
-    <section class="section pt-0 has-text-centered" id="contato">
+    <section class="section pb-0" id="formacao">
+      <div class="tablecontainer">
+        <table>
+          <tr>
+            <td colspan="2" class="table-title">Formação</td>
+          </tr>
+          <tr>
+          </tr>
+          <tr v-for="item in formacao" class="table-habilidade">
+            <td class="table-item"><b>{{item.titulo}}</b><br><a
+                style="color: inherit; font-size: 0.8rem; color: #999999;">{{item.instituicao}} ({{item.periodo}})</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="section has-text-centered" id="contato">
       <h1 class="py-3">Eai, vamos trabalhar juntos?</h1>
       <h3 class="pb-5">Manda uma mensagem<br>...eu não mordo!</h3>
       <div class="contatolinks">
