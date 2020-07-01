@@ -222,6 +222,9 @@ table tr{
   align-content: center;
   align-items: center;
 }
+#contato .contatolinks a{
+  color: inherit;
+}
 
 
 /* MENU OVERLAY */

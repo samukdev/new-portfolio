@@ -179,9 +179,9 @@
     <h1 class="py-3">Eai, vamos trabalhar juntos?</h1>
     <h3 class="pb-5">Manda uma mensagem<br>...eu não mordo!</h3>
     <div class="contatolinks">
-      <i class="fas fa-2x fa-envelope mx-3"></i>
-      <i class="fab fa-4x fa-whatsapp mx-5"></i>
-      <i class="fas  fa-2x fa-phone mx-3"></i>
+      <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-2x fa-envelope mx-3"></i></a>
+      <a :href="links.whatsapp.link"><i class="fab fa-4x fa-whatsapp mx-5"></i></a>
+      <a href="" target="_blank" rel="noopener noreferrer"><i class="fas  fa-2x fa-phone mx-3"></i></a>
     </div>
   </section>
 
@@ -208,9 +208,9 @@
           <li onclick="rolarPara('#habilidades')" @click="menuIsVisible = false">Habilidades</li>
           <li onclick="rolarPara('#contato')" @click="menuIsVisible = false">Contato</li>
           <li onclick="rolarPara('#contato')" @click="menuIsVisible = false">
-            <a href="" target="_blank"><i class="fab fa-lg fa-linkedin-in  has-text-dark"></i></a>
-            <a href="" target="_blank"><i class="fab fa-lg fa-whatsapp has-text-dark"></i></a>
-            <a href="" target="_blank"><i class="fab fa-lg fa-dribbble has-text-dark"></i></a>
+            <a href="links.linkedin.link" target="_blank"><i class="fab fa-lg fa-linkedin-in  has-text-dark"></i></a>
+            <a href="links.whatsapp.link" target="_blank"><i class="fab fa-lg fa-whatsapp has-text-dark"></i></a>
+            <a href="links.dribble.link" target="_blank"><i class="fab fa-lg fa-dribbble has-text-dark"></i></a>
           </li>
         </ul>
       </div>
