@@ -48,7 +48,7 @@ nav ul li a{
 /* HOME */
 #home{
   padding-top: 6rem;
-  background: url(/assets/img/bg_mobile.png) no-repeat;
+  background: url(../img/bg_mobile.png) no-repeat;
   background-size: cover;
   height: 50vh;
   display: flex;

@@ -6,12 +6,12 @@ new Vue({
   },
   methods: {
     buscarJson: function () {
-      fetch("../assets/json/habilidades.json")
+      fetch("../json/habilidades.json")
         .then(r => r.json())
         .then(r => {
           this.habilidades = r.habilidades;
         });
-      fetch("../assets/json/idiomas.json")
+      fetch("../json/idiomas.json")
         .then(r => r.json())
         .then(r => {
           this.idiomas = r.habilidades;
