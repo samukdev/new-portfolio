@@ -3,6 +3,7 @@ new Vue({
   data: {
     habilidades: {},
     idiomas: {},
+    links: {},
     menuIsVisible: false,
     menuIsSticky: false
   },
@@ -17,6 +18,11 @@ new Vue({
         .then(r => r.json())
         .then(r => {
           this.idiomas = r.habilidades;
+        });
+      fetch("assets/json/links.json")
+        .then(r => r.json())
+        .then(r => {
+          this.links = r;
         });
     }
   },

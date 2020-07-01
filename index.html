@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="assets/css/fontface.css">
   <link rel="stylesheet" href="assets/css/keyframes.css">
   <link rel="stylesheet" href="assets/css/main.css">
-  <title>samuk _dev</title>
+  <title>Samuk Dev</title>
 </head>
 
 <body>
@@ -20,94 +20,107 @@
     <nav class="sticky" id="nav">
 
 
-      <div id="bg-sticky" v-if="!menuIsVisible && menuIsSticky" class="sticky bg-sticky sticky-active"></div>
-      <div class="navbar" v-if="!menuIsVisible">
+      <transition name="slide-fade-top">
+        <div id="bg-sticky" v-if="!menuIsVisible && menuIsSticky" class="sticky bg-sticky sticky-active"></div>
+      </transition>
+      <transition name="slide-fade-top">
+        <div class="navbar" v-if="!menuIsVisible">
+      </transition>
 
 
-        <div class="my-nav-brand">
-          <img src="assets/img/logo.svg" alt="">
+      <div class="my-nav-brand">
+        <img src="assets/img/logo.svg" alt="">
+      </div>
+
+      <div class="my-nav-itens">
+        <ul>
+          <li><a :href="links.dribbble.link" target="_blank" class="button is-danger is-rounded mx-1"><i
+                class="fas fa-eye mr-2"></i>
+              Portfolio</a></li>
+          <li @click="menuIsVisible = !menuIsVisible"><i class="fas fa-2x fa-bars mx-1"></i></li>
+        </ul>
+      </div>
+
+  </div>
+  </nav>
+
+  <!-- HOME -->
+  <section class="section" id="home">
+    <div>
+      <h1>Eu crio<br>experiências<br>incríveis.</h1>
+      <h3>Desenvolvedor Front-end<br>UX/UI Designer</h3>
+    </div>
+  </section>
+
+  <!-- PREVIA Portfolio -->
+  <section class="section py-5" id="portfolioheader">
+    <div class="header-portfolio">
+      <div>Meus trabalhos</div>
+      <div class="has-text-danger"><a :href="links.dribbble.link" target="_blank" style="color: inherit;">&mdash; Ver
+          todos
+        </a></div>
+    </div>
+  </section>
+  <section class="section pt-0 pb-0" id="card-container">
+    <div class="card-projeto"></div>
+    <div class="card-projeto"></div>
+    <div class="card-projeto"></div>
+    <div class="card-projeto"></div>
+    <div class="card-projeto"></div>
+    <div class="card-projeto"></div>
+    <div class="card-projeto"></div>
+    <div class="card-projeto"></div>
+    <div class="card-projeto"></div>
+    <div class="card-projeto"></div>
+    <div class="finalspace"></div>
+  </section>
+
+  <section class="section pb-5" id="aboutmecard">
+    <div class="card-me">
+      <div class="columns is-mobile px-4 py-2">
+        <div class="column  coluna-imagem">
+
+
+          <img class="" src="assets/img/me.png">
+
+
         </div>
+        <div class="column">
 
-        <div class="my-nav-itens">
-          <ul>
-            <li><a class="button is-danger is-rounded mx-1"><i class="fas fa-eye mr-2"></i> Portfolio</a></li>
-            <li @click="menuIsVisible = !menuIsVisible"><i class="fas fa-2x fa-bars mx-1"></i></li>
+          <ul class="media-links">
+            <li><a :href="links.github.link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>
+                Github</a></li>
+            <li><a :href="links.dribbble.link" target="_blank" rel="noopener noreferrer"><i class="fab fa-dribbble"></i>
+                Dribbble</a></li>
+            <li><a :href="links.instagram.link" target="_blank" rel="noopener noreferrer"><i
+                  class="fab fa-instagram"></i>
+                Instagram</a></li>
+            <li><a :href="links.linkedin.link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>
+                Linkedin</a></li>
           </ul>
-        </div>
 
-      </div>
-    </nav>
-
-    <!-- HOME -->
-    <section class="section" id="home">
-      <div>
-        <h1>Eu crio<br>experiências<br>incríveis.</h1>
-        <h3>Desenvolvedor Front-end<br>UX/UI Designer</h3>
-      </div>
-    </section>
-
-    <!-- PREVIA Portfolio -->
-    <section class="section py-5" id="portfolioheader">
-      <div class="header-portfolio">
-        <div>Meus trabalhos</div>
-        <div class="has-text-danger">&mdash; Ver todos</div>
-      </div>
-    </section>
-    <section class="section pt-0 pb-0" id="card-container">
-      <div class="card-projeto"></div>
-      <div class="card-projeto"></div>
-      <div class="card-projeto"></div>
-      <div class="card-projeto"></div>
-      <div class="card-projeto"></div>
-      <div class="card-projeto"></div>
-      <div class="card-projeto"></div>
-      <div class="card-projeto"></div>
-      <div class="card-projeto"></div>
-      <div class="card-projeto"></div>
-      <div class="finalspace"></div>
-    </section>
-
-    <section class="section pb-5" id="aboutmecard">
-      <div class="card-me">
-        <div class="columns is-mobile px-4 py-2">
-          <div class="column  coluna-imagem">
-
-
-            <img class="" src="assets/img/me.png">
-
-
-          </div>
-          <div class="column">
-
-            <ul class="media-links">
-              <li><i class="fab fa-github"></i> Github</li>
-              <li><i class="fab fa-instagram"></i> Instagram</li>
-              <li><i class="fab fa-twitter"></i> Twitter</li>
-              <li><i class="fab fa-linkedin"></i> Linkedin</li>
-            </ul>
-
-          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 
 
-    <section class="section pt-0" id="aboutmecontent">
-      <h1>Olá,<br>
-        meu nome é<br>
-        Samuel Barbosa<br></h1>
-      <p>
-        Eu sou programador. Minha maior paixão é o desenvolvimento para Web, mas não me limito apenas a isso. Eu me
-        dedico bastante ao front-end. Também fico super interessado quando o assunto é Design de experiência do usuário
-        e interface do usuário.
-      </p>
-      <p>
-        Odeio ser clichê, mas eu sou programador viciado em café .-.
-      </p>
-    </section>
+  <section class="section pt-0" id="aboutmecontent">
+    <h1>Olá,<br>
+      meu nome é<br>
+      Samuel Barbosa<br></h1>
+    <p>
+      Eu sou programador. Minha maior paixão é o desenvolvimento para Web, mas não me limito apenas a isso. Eu me
+      dedico bastante ao front-end. Também fico super interessado quando o assunto é Design de experiência do usuário
+      e interface do usuário.
+    </p>
+    <p>
+      Odeio ser clichê, mas eu sou programador viciado em café.
+    </p>
+  </section>
 
-    <!-- <section class="section pb-5 pt-0">
+  <!-- <section class="section pb-5 pt-0">
       <div id="duckdev" class="px-5 py-5">
         <div class="columns is-mobile">
           <div class="column has-text-centered">
@@ -118,79 +131,96 @@
       </div>
     </section> -->
 
-    <section class="section pt-0 mt-5" id="habilidades">
-      <div class="tablecontainer">
-        <table>
-          <tr>
-            <td colspan="2" class="table-title">Habilidades</td>
-          </tr>
-          <tr>
-            <td class="table-subtitle">Habilidade</td>
-            <td class="table-subtitle">Nível</td>
-          </tr>
-          <tr v-for="habilidade in habilidades" class="table-habilidade">
-            <td class="table-item">{{habilidade.habilidade}}</td>
-            <td class="table-item">
-              <i class="fas fa-sm fa-star" :class="{'has-text-danger': index < habilidade.nivel}"
-                v-for="(star, index) in 5"></i>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </section>
+  <section class="section pt-0 mt-5" id="habilidades">
+    <div class="tablecontainer">
+      <table>
+        <tr>
+          <td colspan="2" class="table-title">Habilidades</td>
+        </tr>
+        <tr>
+          <td class="table-subtitle">Habilidade</td>
+          <td class="table-subtitle">Nível</td>
+        </tr>
+        <tr v-for="habilidade in habilidades" class="table-habilidade">
+          <td class="table-item">{{habilidade.habilidade}}</td>
+          <td class="table-item">
+            <i class="fas fa-sm fa-star" :class="{'has-text-danger': index < habilidade.nivel}"
+              v-for="(star, index) in 5"></i>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
 
 
 
-    <section class="section pt-0" id="Idiomas">
-      <div class="tablecontainer">
-        <table>
-          <tr>
-            <td colspan="2" class="table-title">Idiomas</td>
-          </tr>
-          <tr>
-            <td class="table-subtitle">Língua</td>
-            <td class="table-subtitle">Nível</td>
-          </tr>
-          <tr v-for="idioma in idiomas" class="table-habilidade">
-            <td class="table-item">{{idioma.idioma}}</td>
-            <td class="table-item">
-              <i class="fas fa-sm fa-star" :class="{'has-text-danger': index < idioma.nivel}"
-                v-for="(star, index) in 5"></i>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </section>
+  <section class="section pt-0" id="Idiomas">
+    <div class="tablecontainer">
+      <table>
+        <tr>
+          <td colspan="2" class="table-title">Idiomas</td>
+        </tr>
+        <tr>
+          <td class="table-subtitle">Língua</td>
+          <td class="table-subtitle">Nível</td>
+        </tr>
+        <tr v-for="idioma in idiomas" class="table-habilidade">
+          <td class="table-item">{{idioma.idioma}}</td>
+          <td class="table-item">
+            <i class="fas fa-sm fa-star" :class="{'has-text-danger': index < idioma.nivel}"
+              v-for="(star, index) in 5"></i>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
 
-    <section class="section pt-0 has-text-centered" id="contato">
-      <h1 class="py-3">Eai, vamos trabalhar juntos?</h1>
-      <h3 class="pb-5">Manda uma mensagem<br>...eu não mordo!</h3>
-      <div class="contatolinks">
-        <i class="fas fa-2x fa-envelope mx-3"></i>
-        <i class="fab fa-4x fa-whatsapp mx-5"></i>
-        <i class="fas  fa-2x fa-phone mx-3"></i>
-      </div>
-    </section>
+  <section class="section pt-0 has-text-centered" id="contato">
+    <h1 class="py-3">Eai, vamos trabalhar juntos?</h1>
+    <h3 class="pb-5">Manda uma mensagem<br>...eu não mordo!</h3>
+    <div class="contatolinks">
+      <i class="fas fa-2x fa-envelope mx-3"></i>
+      <i class="fab fa-4x fa-whatsapp mx-5"></i>
+      <i class="fas  fa-2x fa-phone mx-3"></i>
+    </div>
+  </section>
 
-    <footer class="footer has-background-dark has-text-centered pb-6">
-      <h1 style="font-size: 0.8rem; color: #707070; line-height: 2rem;">Página desenvolvida por mim com muito carinho
-        .<br>Volte sempre!
-      </h1>
-    </footer>
+  <footer class="footer has-background-dark has-text-centered pb-6">
+    <h1 style="font-size: 0.8rem; color: #707070; line-height: 2rem;">Página desenvolvida por mim com muito carinho
+      .<br>Volte sempre!
+    </h1>
+  </footer>
 
-    <!-- MENU OVERLAY -->
-    <div class="menuoverlay" v-if="menuIsVisible">
-      <div class="menu-overlay-menu">
+
+  <!-- MENU OVERLAY -->
+
+
+
+
+  <div class="menuoverlay">
+    <transition name="slide-fade">
+      <div class="menu-overlay-menu" v-if="menuIsVisible">
         <ul>
           <li onclick="rolarPara('#home')" @click="menuIsVisible = false">Home</li>
-          <li @click="menuIsVisible = false">Portfolio</li>
+          <li @click="menuIsVisible = false">Portfolio <i
+              class="fas fa-sm fa-external-link-alt has-text-grey-light"></i></li>
           <li onclick="rolarPara('#aboutmecard')" @click="menuIsVisible = false">Sobre mim</li>
           <li onclick="rolarPara('#habilidades')" @click="menuIsVisible = false">Habilidades</li>
           <li onclick="rolarPara('#contato')" @click="menuIsVisible = false">Contato</li>
+          <li onclick="rolarPara('#contato')" @click="menuIsVisible = false">
+            <a href="" target="_blank"><i class="fab fa-lg fa-linkedin-in  has-text-dark"></i></a>
+            <a href="" target="_blank"><i class="fab fa-lg fa-whatsapp has-text-dark"></i></a>
+            <a href="" target="_blank"><i class="fab fa-lg fa-dribbble has-text-dark"></i></a>
+          </li>
         </ul>
       </div>
+    </transition>
+    <transition name="fade">
       <div @click="menuIsVisible = !menuIsVisible" class="menu-overlay-esquerda" v-if="menuIsVisible"></div>
-    </div>
+    </transition>
+  </div>
+
+
 
   </div>
   <script src="assets/js/app.js"></script>
