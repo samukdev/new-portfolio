@@ -79,10 +79,6 @@ nav ul li a{
   align-items: center;
   justify-content: space-between;
 }
-#card-container::-webkit-scrollbar{
-  display: none;
-  
-}
 #card-container{
   display: flex;
   overflow-x: auto;
@@ -95,8 +91,9 @@ nav ul li a{
   margin-right: 2rem;
   background-color: lightcoral;
   border-radius: 1rem;
-  background:url(/assets/img/cards/1.png) no-repeat center;
-  background-size:cover;
+  background: url(../img/cards/1.png);
+  background-position: center;
+  background-size: cover;
 }
 .finalspace{
   height: 35vh;
