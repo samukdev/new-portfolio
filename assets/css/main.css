@@ -87,9 +87,11 @@ nav ul li a{
 #card-container::-webkit-scrollbar{
   display: none;
 }
+
+/* IMAGENS 800x600 */
 .card-projeto{
-  height: 35vh;
-  min-width: 25vh;
+  height: 36vh;
+  min-width: 27vh;
   margin-right: 2rem;
   background-color: lightcoral;
   border-radius: 1rem;
@@ -103,6 +105,10 @@ nav ul li a{
 }
 
 /* ABOUT ME */
+
+.aboutmecardcontainer{
+  padding: 2rem 1rem;
+}
 .me-photo{
   border-radius: 50%;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
