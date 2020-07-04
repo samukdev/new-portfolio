@@ -387,6 +387,7 @@ border-radius: 50%;
   overflow-x: auto;
   height: 300px;
   overflow-y: hidden;
+  margin: 1rem;
 
 }
 #card-container::-webkit-scrollbar{
