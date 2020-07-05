@@ -342,17 +342,16 @@ table tr{
 }
 #home{
   background: none;
+  padding-bottom: 10vh;
 }
 
 #home{
- 
   background-size: cover;
   height: 60vh;
   display: flex;
   align-items: center;
   justify-items: center;
   text-align: center;
-
 }
 #home h1{
   font-size: 3rem;
