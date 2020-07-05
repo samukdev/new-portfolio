@@ -112,8 +112,8 @@
 
           <div class="" style="position: relative;">
 
-            <div class="previous" onclick="proximo('#galeria')"><i class="fas fa-3x fa-chevron-left"></i></div>
-            <div class="next" onclick="proximo('#galeria')"><i class="fas fa-3x fa-chevron-right"></i></div>
+            <div class="previous is-hidden-mobile" onclick="anterior()"><i class="fas fa-3x fa-chevron-left"></i></div>
+            <div class="next is-hidden-mobile" onclick="proximo()"><i class="fas fa-3x fa-chevron-right"></i></div>
 
             <div class="conteudo-galeria" id="galeria">
               <figure class="card-galeria image">
@@ -327,6 +327,16 @@
   <script src="assets/js/app.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
   <script>
+    function proximo() {
+      $('#galeria').animate({ scrollLeft: "+=" + $('#galeria').width() }, 1500);
+      console.log($('#galeria').width());
+    }
+    function anterior() {
+      $('#galeria').animate({ scrollLeft: "-=" + + $('#galeria').width() }, 1500);
+    }
+
+
+
     function rolarPara(elemento) {
       $('html, body').animate({
         scrollTop: $(elemento).offset().top - 50

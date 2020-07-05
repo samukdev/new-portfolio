@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 .galeria{
-  padding: 1.7rem; 
+  padding: 2rem; 
 }
  .header-galeria{
     width: 100%;
@@ -16,7 +16,7 @@
     display: flex;
     align-items: center;
     overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+
   }
   .conteudo-galeria::-webkit-scrollbar{
     display: none;
@@ -24,11 +24,11 @@
   
  
   .card-galeria{
-    
+   
     margin-right: 1rem;
     height: 156px;
     min-width: 156px;
-    scroll-snap-align: start;
+    
     padding: 0;
   }
   .br-cardimage{
@@ -40,10 +40,13 @@
     padding-right: 0;
     
   }
+  .card-galeria{
+    scroll-snap-align: start;
+  }
  
   .conteudo-galeria{
     min-height: 30vh;
-    
+    scroll-snap-type: x mandatory;
   }
     .header-galeria{
       padding: 1rem;
