@@ -70,6 +70,7 @@
     justify-content: center;
     opacity: 0.3;
     border-radius: 3px;
+    cursor: pointer;
   }
   .previous{
    
