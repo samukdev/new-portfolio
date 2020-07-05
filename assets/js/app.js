@@ -32,8 +32,11 @@ new Vue({
         });
     }
   },
-  mounted: function () {
+  created: function () {
     this.buscarJson();
+  },
+  mounted: function () {
+
     // BACKGROUND NAVBAR ON SCROLL
     var vm = this;
     window.addEventListener('scroll', function () {
