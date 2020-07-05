@@ -96,6 +96,9 @@ nav ul li a{
 #card-container{
   display: flex;
   overflow-x: auto;
+  height: 30vh;
+  padding: 10rem;
+  overflow-y: hidden;
   padding-right: 20rem;
   
 }
@@ -110,8 +113,8 @@ nav ul li a{
 
 /* IMAGENS 800x600 */
 .card-projeto{
-  height: 36vh;
-  min-width: 27vh;
+  height: 30vh;
+  min-width: 22.5vh;
   margin-right: 2rem;
   background-color: lightcoral;
   border-radius: 1rem;
@@ -402,7 +405,7 @@ border-radius: 50%;
 #card-container{
   display: flex;
   overflow-x: auto;
-  height: 300px;
+  height: 24vh;
   overflow-y: hidden;
   margin: 1rem;
 
@@ -414,9 +417,8 @@ border-radius: 50%;
 
 /* IMAGENS 800x600 */
 .card-projeto{
-  height: 36vh;
-  min-width: 200px;
-  max-height: 250px;
+  height: 24vh;
+  width: 20vh;
   margin-right: 2rem;
   border-radius: 1rem;
   background: url(../img/cards/1.png);
