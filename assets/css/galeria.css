@@ -22,6 +22,7 @@
     display: none;
   }
   
+ 
   .card-galeria{
     
     margin-right: 1rem;
@@ -34,14 +35,21 @@
     border-radius: 1rem;
   }
 @media only screen and (max-width: 768px){
+  .galeria{
+    padding-left: 1rem;
+    padding-right: 0;
+    
+  }
+ 
   .conteudo-galeria{
-    height: 30vh;
-  
+    min-height: 30vh;
+    
   }
     .header-galeria{
-      height: 20vh;
+      padding: 1rem;
       align-items: flex-end;}
 }
+
   @media only screen and (min-width: 768px){
     .card-galeria{
       

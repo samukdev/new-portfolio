@@ -15,6 +15,9 @@ body{
 }
 
 /* NAVBAR*/
+nav{
+  z-index: 99;
+}
 nav ul li {
   display: inline;
 }
