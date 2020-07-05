@@ -36,16 +36,22 @@
   }
 @media only screen and (max-width: 768px){
   .galeria{
-    padding-left: 1rem;
     padding-right: 0;
-    
+    padding-left: 0;
   }
   .card-galeria{
     scroll-snap-align: start;
   }
+  .card-galeria:first-child{
+    margin-left: 1rem;
+  }
+  .card-galeria:last-child{
+    margin-right: 1rem;
+  }
  
   .conteudo-galeria{
     min-height: 30vh;
+    scroll-padding-left: 1rem;
     scroll-snap-type: x mandatory;
   }
     .header-galeria{
