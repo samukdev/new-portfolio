@@ -252,7 +252,8 @@ table tr{
 }
 #contato h3{
   font-size: 1rem;
-  color: #808080;
+  color: #f5f5f5;
+  opacity: 0.75;
 }
 
 #contato .contatolinks{
@@ -485,3 +486,8 @@ border-radius: 50%;
       .container-my {
         max-width: 1344px;
         width: 1344px; } }
+
+        footer h1{
+          font-size: 0.8rem; color: #f1f1f1; line-height: 1.5rem;
+          opacity: 0.85;
+        }
