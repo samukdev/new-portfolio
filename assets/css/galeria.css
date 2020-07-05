@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 .galeria{
-  padding: 2rem; 
+  padding: 1.7rem; 
 }
  .header-galeria{
     width: 100%;
@@ -12,7 +12,7 @@
   padding: 1rem 0;
   }
   .conteudo-galeria{
-    
+    position: relative;
     display: flex;
     align-items: center;
     overflow-x: scroll;
@@ -57,4 +57,30 @@
       min-width: 208px;
     }
   
+  }
+
+  .previous, .next{
+    width: 50px;
+    height: 208px;
+    background-color: #303030;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.3;
+    border-radius: 3px;
+  }
+  .previous{
+   
+    left: 0
+    
+    
+  }
+  .next{
+    
+    position: absolute;
+    right: 0;
+
+    
   }
