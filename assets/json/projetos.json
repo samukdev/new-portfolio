@@ -3,30 +3,35 @@
     "nome": "Pomodoro Clock",
     "alt": "Pomodoro Clock App",
     "caminho": "assets/img/cards/pomodoro.webp",
+    "miniatura": "assets/img/cards/miniatura/pomodoro.webp",
     "link": ""
   },
   {
     "nome": "Weather App",
     "alt": "Weather App",
     "caminho": "assets/img/cards/weather-app.webp",
+    "miniatura": "assets/img/cards/miniatura/weather-app.webp",
     "link": ""
   },
   {
     "nome": "COVID19 Report",
     "alt": "COVID19 Report",
     "caminho": "assets/img/cards/covid19-report.webp",
+    "miniatura": "assets/img/cards/miniatura/covid19-report.webp",
     "link": ""
   },
   {
     "nome": "To-do App",
     "alt": "To-do App",
     "caminho": "assets/img/cards/to-do.webp",
+    "miniatura": "assets/img/cards/miniatura/to-do.webp",
     "link": ""
   },
   {
     "nome": "Border-radius generator",
     "alt": "Border-radius generator",
     "caminho": "assets/img/cards/border-radius-previewer.webp",
+    "miniatura": "assets/img/cards/miniatura/border-radius-previewer.webp",
     "link": ""
   }
 ]
