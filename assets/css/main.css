@@ -62,10 +62,10 @@ nav ul li a{
   display: flex;
   align-items: center;
 }
-@media only screen and (min-width: 768px) and (max-width:1024px){
+@media only screen and (min-width: 769px) and (max-width:1023px){
   #home{
     padding-left: 6rem;
-    background: url(../img/bg_desktop.png)
+    background: url(../img/bg_desktop.png) !important;
   }
 }
 @media only screen and (min-width: 768px){
