@@ -1,0 +1,32 @@
+[
+  {
+    "nome": "Pomodoro Clock",
+    "alt": "Pomodoro Clock App",
+    "caminho": "assets/img/cards/pomodoro.webp",
+    "link": ""
+  },
+  {
+    "nome": "Weather App",
+    "alt": "Weather App",
+    "caminho": "assets/img/cards/weather-app.webp",
+    "link": ""
+  },
+  {
+    "nome": "COVID19 Report",
+    "alt": "COVID19 Report",
+    "caminho": "assets/img/cards/covid19-report.webp",
+    "link": ""
+  },
+  {
+    "nome": "To-do App",
+    "alt": "To-do App",
+    "caminho": "assets/img/cards/to-do.webp",
+    "link": ""
+  },
+  {
+    "nome": "Border-radius generator",
+    "alt": "Border-radius generator",
+    "caminho": "assets/img/cards/border-radius-previewer.webp",
+    "link": ""
+  }
+]

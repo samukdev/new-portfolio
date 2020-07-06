@@ -5,6 +5,7 @@ new Vue({
     idiomas: {},
     links: {},
     formacao: {},
+    projetos: {},
     menuIsVisible: false,
     menuIsSticky: false
   },
@@ -29,6 +30,11 @@ new Vue({
         .then(r => r.json())
         .then(r => {
           this.formacao = r;
+        });
+      fetch("assets/json/projetos.json")
+        .then(r => r.json())
+        .then(r => {
+          this.projetos = r;
         });
     }
   },

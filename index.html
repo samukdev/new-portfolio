@@ -117,32 +117,8 @@
             <div class="next is-hidden-mobile" onclick="proximo()"><i class="fas fa-3x fa-chevron-right"></i></div>
 
             <div class="conteudo-galeria" id="galeria">
-              <figure class="card-galeria image">
-                <img class="br-cardimage" src="assets/img/128x128.png">
-              </figure>
-
-              <figure class="card-galeria image ">
-                <img class="br-cardimage" src="assets/img/128x128.png">
-              </figure>
-
-              <figure class="card-galeria image">
-                <img class="br-cardimage" src="assets/img/128x128.png">
-              </figure>
-
-              <figure class="card-galeria image">
-                <img class="br-cardimage" src="assets/img/128x128.png">
-              </figure>
-              <figure class="card-galeria image">
-                <img class="br-cardimage" src="assets/img/128x128.png">
-              </figure>
-              <figure class="card-galeria image">
-                <img class="br-cardimage" src="assets/img/128x128.png">
-              </figure>
-              <figure class="card-galeria image">
-                <img class="br-cardimage" src="assets/img/128x128.png">
-              </figure>
-              <figure class="card-galeria image">
-                <img class="br-cardimage" src="assets/img/128x128.png">
+              <figure class="card-galeria image" v-for="projeto in projetos">
+                <img class="br-cardimage" :src="projeto.caminho" :alt="projeto.alt">
               </figure>
             </div>
           </div>
@@ -329,11 +305,13 @@
   <script src="assets/js/jquery-2.1.0.js"></script>
   <script>
     function proximo() {
-      $('#galeria').animate({ scrollLeft: "+=" + $('#galeria').width() }, 1500);
+      $('#galeria').animate({ scrollLeft: "+=" + ($('.card-galeria').width() + 16 }, 1500);
       console.log($('#galeria').width());
     }
     function anterior() {
-      $('#galeria').animate({ scrollLeft: "-=" + + $('#galeria').width() }, 1500);
+      $('#galeria').animate({
+        scrollLeft: "-=" + ($('.card-galeria').width() + 16)
+      }, 1500);
     }
 
 
