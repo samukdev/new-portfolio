@@ -304,6 +304,9 @@ table tr{
   margin-top: 1rem;
 }
 .menu-overlay-menu ul li a{
+  color: inherit;
+}
+.aicon{
   border: 2px solid #909090;
   max-height: 5rem;
   max-width: 5rem;
