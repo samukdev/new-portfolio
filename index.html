@@ -284,7 +284,9 @@
           <h2 class="pb-5 has-text-grey-lighter">Manda uma mensagem<br>...eu não mordo!</h2>
           <div class="contatolinks">
             <!-- <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-2x fa-envelope mx-3"></i></a> -->
-            <a class="button is-success is-large is-rounded" :href="links.whatsapp.link" target="_blank"
+            <a class="button is-success is-large is-rounded is-hidden-mobile" :href="links.whatsapp.link"
+              target="_blank" rel="noopener noreferrer"><i class="fab fa-2x fa-whatsapp mr-3"></i> Enviar mensagem</a>
+            <a class="button is-success is-rounded is-hidden-tablet" :href="links.whatsapp.link" target="_blank"
               rel="noopener noreferrer"><i class="fab fa-2x fa-whatsapp mr-3"></i> Enviar mensagem</a>
             <!-- <a href="" target="_blank" rel="noopener noreferrer"><i class="fas  fa-2x fa-phone mx-3"></i></a> -->
           </div>
