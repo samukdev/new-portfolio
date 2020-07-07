@@ -28,9 +28,10 @@
     </transition>
     <transition name="slide">
       <div class="modalcontainer" v-if="showModal">
+        <div class="clicafecha" @click="showModal = false"></div>
         <div class="modalImagem">
-          <div class="has-text-right">
-            <span @click="showModal = false">
+          <div class="has-text-right" @click="showModal = false">
+            <span>
               <i class="far fa-2x fa-times-circle mx-2 my-2 has-text-grey-lighter"></i>
             </span>
 
