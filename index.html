@@ -14,8 +14,8 @@
   <link defer rel="stylesheet" href="assets/css/fontface.css">
   <link defer rel="stylesheet" href="assets/css/keyframes.css">
   <link defer rel="stylesheet" href="assets/css/main.css">
-  <link defer rel="stylesheet" href="assets/css/galeria.css"> -->
-  <!-- <link rel="stylesheet" href="assets/css/responsive.css"> -->
+  <link defer rel="stylesheet" href="assets/css/galeria.css">
+  <link rel="stylesheet" href="assets/css/responsive.css"> -->
   <link rel="shortcut icon" href="assets/ico/favicon.ico" />
   <title>Samuk Dev</title>
 </head>
@@ -27,7 +27,6 @@
     <!-- NAVBAR -->
     <nav class="sticky is-hidden-desktop" id="nav">
 
-
       <transition name="slide-fade-top">
         <div id="bg-sticky" v-if="!menuIsVisible && menuIsSticky" class="sticky bg-sticky sticky-active"></div>
       </transition>
@@ -35,7 +34,7 @@
         <div class="navbar" v-if="!menuIsVisible">
 
           <div class="my-nav-brand">
-            <img src="assets/img/logo.svg" alt="">
+            <img src="assets/img/logo.svg" alt="logo_samukdev">
           </div>
 
           <div class="my-nav-itens">
@@ -122,7 +121,7 @@
             <div class="next is-hidden-mobile" onclick="proximo()"><i class="fas fa-3x fa-chevron-right"></i></div>
 
             <div class="conteudo-galeria" id="galeria">
-              <figure class="card-galeria image" v-for="projeto in projetos">
+              <figure class="card-galeria image" v-for="projeto in projetos" @click="abrirModal(projeto)">
                 <img class="br-cardimage" :src="projeto.miniatura" :alt="projeto.alt">
               </figure>
 
