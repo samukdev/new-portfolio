@@ -322,8 +322,9 @@
         <div class="menu-overlay-menu" v-if="menuIsVisible">
           <ul>
             <li onclick="rolarPara('#home')" @click="menuIsVisible = false">Home</li>
-            <li @click="menuIsVisible = false">Portfolio <i
-                class="fas fa-sm fa-external-link-alt has-text-grey-light"></i></li>
+            <li @click="menuIsVisible = false"><a :href="links.dribbble.link" target="_blank"
+                rel="noopener noreferrer">Portfolio<i
+                  class="fas fa-sm fa-external-link-alt has-text-grey-light"></i></a> </li>
             <li onclick="rolarPara('#aboutmecard')" @click="menuIsVisible = false">Sobre mim</li>
             <li onclick="rolarPara('#habilidades')" @click="menuIsVisible = false">Habilidades</li>
             <li onclick="rolarPara('#contato')" @click="menuIsVisible = false">Contato</li>
