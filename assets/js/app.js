@@ -7,7 +7,9 @@ new Vue({
     formacao: {},
     projetos: {},
     menuIsVisible: false,
-    menuIsSticky: false
+    menuIsSticky: false,
+    showModal: false,
+    imagemModal: {}
   },
   methods: {
     buscarJson: function () {
@@ -36,6 +38,11 @@ new Vue({
         .then(r => {
           this.projetos = r;
         });
+    },
+    abrirModal: function (item) {
+      this.imagemModal = item;
+      console.log(item);
+      this.showModal = true;
     }
   },
   created: function () {
@@ -47,6 +54,8 @@ new Vue({
     var vm = this;
     window.addEventListener('scroll', function () {
       vm.menuIsVisible = false;
+      vm.showModal = false;
+
       if (window.pageYOffset > 10) {
         vm.menuIsSticky = true;
       }

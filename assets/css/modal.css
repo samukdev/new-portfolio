@@ -1,0 +1,60 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 98;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh !important;
+ }
+ 
+.modalcontainer{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: none;
+ z-index: 99;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.modalImagem{
+  z-index: 98;
+  display: flex;
+  flex-direction: column;
+}
+
+ .modalImagem img{
+    border-radius: 1rem;
+    max-width: 50vw;
+    max-height: 50vh;
+ }
+ @media only screen and (max-width: 768px)
+ {
+ .modalImagem img{
+  border-radius: 1rem;
+  max-width: 80vw;
+  max-height: 80vh;
+}
+}
+
+          .fade-enter-active,
+  .fade-leave-active {
+  transition: opacity .5s;
+  }
+
+  .fade-enter,
+  .fade-leave-to {
+  opacity: 0;
+  }
+
+  .slide-enter-active,
+  .slide-leave-active {
+  transition: transform .75s;
+  }
+
+  .slide-enter,
+  .slide-leave-to {
+  transform: translateX(100vw) scale(0);
+  }
