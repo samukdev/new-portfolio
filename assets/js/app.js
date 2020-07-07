@@ -41,7 +41,6 @@ new Vue({
     },
     abrirModal: function (item) {
       this.imagemModal = item;
-      console.log(item);
       this.showModal = true;
     }
   },

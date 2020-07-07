@@ -16,7 +16,7 @@ body{
 
 /* NAVBAR*/
 nav{
-  z-index: 99;
+  z-index: 97;
 }
 nav ul li {
   display: inline;

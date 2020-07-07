@@ -7,15 +7,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="assets/js/fontawesome.js"></script>
-  <link rel="preload" href="assets/css/styles.pure.css" as="style">
-  <link defer rel="stylesheet" href="assets/css/styles.pure.css">
-  <!-- <link rel="preload" href="assets/css/fontface.css" as="style">
+  <link defer rel="stylesheet" href="assets/css/modal.css">
+  <link rel="preload" href="assets/css/fontface.css" as="style">
   <link defer rel="stylesheet" href="assets/css/bulma.min.css">
   <link defer rel="stylesheet" href="assets/css/fontface.css">
   <link defer rel="stylesheet" href="assets/css/keyframes.css">
   <link defer rel="stylesheet" href="assets/css/main.css">
   <link defer rel="stylesheet" href="assets/css/galeria.css">
-  <link rel="stylesheet" href="assets/css/responsive.css"> -->
+
   <link rel="shortcut icon" href="assets/ico/favicon.ico" />
   <title>Samuk Dev</title>
 </head>
@@ -23,6 +22,30 @@
 <body>
   <div id="app">
 
+    <!-- MODAL IMAGEM -->
+    <transition name="fade">
+      <div class="modal-overlay" v-if="showModal" @click="showModal = false"></div>
+    </transition>
+    <transition name="slide">
+      <div class="modalcontainer" v-if="showModal">
+        <div class="modalImagem">
+          <div class="has-text-right">
+            <span @click="showModal = false">
+              <i class="far fa-2x fa-times-circle mx-2 my-2 has-text-grey-lighter"></i>
+            </span>
+
+          </div>
+          <img :src="imagemModal.caminho" :alt="imagemModal.alt">
+          <a :href="imagemModal.link" target="_blank" rel="noopener noreferrer"
+            class="button is-white is-outlined mt-2"><i class="fab fa-lg fa-dribbble has-text-grey-lighter mr-3"></i>Ver
+            detalhes no
+            dribbble</a>
+          <div class="has-text-right">
+
+          </div>
+        </div>
+      </div>
+    </transition>
     <!-- MOBILE ONLY -->
     <!-- NAVBAR -->
     <nav class="sticky is-hidden-desktop" id="nav">
@@ -138,7 +161,10 @@
                   <div class="column  coluna-imagem">
 
 
-                    <img alt="Samuel Barbosa - Frontend Developer" src="assets/img/me.webp">
+
+                    <figure>
+                      <img alt="Samuel Barbosa - Frontend Developer" src="assets/img/me.webp">
+                    </figure>
 
 
                   </div>
@@ -323,13 +349,12 @@
   <script src="assets/js/jquery.js"></script>
   <script>
     function proximo() {
-      $('#galeria').animate({ scrollLeft: "+=" + ($('.card-galeria').width() + 16) }, 1500);
-      console.log($('#galeria').width());
+      $('#galeria').animate({ scrollLeft: "+=" + ($('.card-galeria').width() + 16) }, 500);
     }
     function anterior() {
       $('#galeria').animate({
         scrollLeft: "-=" + ($('.card-galeria').width() + 16)
-      }, 1500);
+      }, 500);
     }
 
 

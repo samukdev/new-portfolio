@@ -51,7 +51,7 @@
 
   .slide-enter-active,
   .slide-leave-active {
-  transition: transform .75s;
+  transition: transform .5s ease-in-out;
   }
 
   .slide-enter,
