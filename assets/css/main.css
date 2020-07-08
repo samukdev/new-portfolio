@@ -354,12 +354,12 @@ table tr{
 
   height: 80vh;
 }
-#home{
+#homeD{
   background: none;
   padding-bottom: 10vh;
 }
 
-#home{
+#homeD{
   background-size: cover;
   height: 60vh;
   display: flex;
@@ -367,7 +367,7 @@ table tr{
   justify-items: center;
   text-align: center;
 }
-#home h1{
+#homeD h1{
   font-size: 3rem;
   font-weight: bolder;
   line-height: 140%;
@@ -375,7 +375,7 @@ table tr{
   margin-bottom: 1rem;
 }
 
-#home h2{
+#homeD h2{
   font-size: 1.5rem;
   font-weight: 200;
   line-height: 150%;
@@ -383,10 +383,10 @@ table tr{
   letter-spacing: 0.2rem;
   color: #909090;
 }
-#home ul li{
+#homeD ul li{
   display: flex;
 }
-#home ul li a{
+#homeD ul li a{
 border: 2px solid #909090;
 max-height: 5rem;
 max-width: 5rem;
@@ -397,15 +397,20 @@ align-items: center;
 justify-content: center;
 margin-right: 1rem;
 border-radius: 50%;
+color: hsl(0, 0%, 86%);
+transition: color 0.35s 0.15s, border 0.35s;
 }
-
-#home ul li svg{
+#homeD ul li a:hover{
+  color: #707070;
+  border: 2px solid #707070;
+}
+#homeD ul li svg{
   margin: 0.5rem;
   height: 2rem;
   width: 2rem;
 }
 
-#home .medialinks{
+#homeD .medialinks{
   display: flex;
   justify-items: center;
   align-items: center;
@@ -463,6 +468,7 @@ border-radius: 50%;
   transform: scale(1.15);
   color: inherit;
 }
+
   }
 
 
