@@ -4,13 +4,13 @@
 }
 
 body{
-  background-color: #252525;
+  background-color: #191919;
   color: #f5f5f5;
   overflow-x: hidden;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1024px){
   body{
-    background-color: #202020;
+    background-color: #181818;
   }
 }
 @media only screen and (max-width: 1024px){
@@ -111,9 +111,16 @@ nav ul li a{
   margin-top: 1px;
   padding: 2rem 1rem;
 }
+@media only screen and (min-width:1025px){
+  .card-me{
+    background: #252525;
+  }
+}
 
-.card-me{
-  background: #252525;
+@media only screen and (max-width:1024px){
+  .card-me{
+    background: #212121;
+  }
 }
 .media-links{
   letter-spacing: 10%;
@@ -178,7 +185,17 @@ table{
 }
 .tablecontainer{
   padding: 2rem 1rem;
-  background-color: #252525;
+}
+@media only screen and (min-width:1025px){
+  .tablecontainer{
+    background: #252525;
+  }
+}
+
+@media only screen and (max-width:1024px){
+  .tablecontainer{
+    background: #212121;
+  }
 }
 table td{
   box-sizing: border-box;
@@ -188,7 +205,6 @@ table td{
 }
 table tr{
   margin: 5rem;
-  background-color: #252525;
 }
 .table-title{
   font-size: 1.2rem;
@@ -213,8 +229,16 @@ table tr{
   padding: 0px;
 }
 
-.table-habilidade:nth-child(even) {}
-.table-habilidade:nth-child(odd) {background: #282828}
+
+@media only screen and (min-width:1025px){
+
+  .table-habilidade:nth-child(odd) {background: #282828}
+
+}
+
+@media only screen and (max-width:1024px){
+  .table-habilidade:nth-child(odd) {background: #232323}
+}
 
 #contato img{
   height: 50%;
@@ -317,11 +341,11 @@ table tr{
  margin-top: -15vh;
 }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1024px) {
    #containerpai{
   width: 100%;
   min-height: 50vh;
-  background: #202020;
+  background: #212121;
   padding: 5rem;
   border-radius: 3px;
    }
