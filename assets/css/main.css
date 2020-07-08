@@ -13,6 +13,21 @@ body{
     background-color: #202020;
   }
 }
+@media only screen and (max-width: 1024px){
+  #home, #home1{
+    background: url('/assets/img/bgdobagulhomobile.png') no-repeat !important;
+    background-position: right center !important;
+    background-size: contain !important;
+  }
+}
+@media only screen and (min-width: 1025px){
+  #home, #home1{
+    background: url('/assets/img/bgdobagulho.png') no-repeat !important;
+    background-position: top center !important;
+    background-size: contain !important;
+  }
+}
+
 
 /* NAVBAR*/
 nav{
@@ -53,19 +68,19 @@ nav ul li a{
 
 
 /* HOME */
+
 #home{
   padding-top: 2;
-  background: url(../img/bg_mobile.png) no-repeat;
   background-size: cover;
   min-height: 50vh;
   padding-top: 5rem;
   display: flex;
   align-items: center;
 }
-@media only screen and (min-width: 769px) and (max-width:1023px){
+@media only screen and (min-width: 767px) and (max-width:1023px){
   #home{
     padding-left: 6rem;
-    background: url(../img/bg_desktop.png) !important;
+
   }
 }
 @media only screen and (min-width: 768px){
@@ -89,46 +104,6 @@ nav ul li a{
   color: #606060;
 }
 
-/* Prévia Portfolio */
-.header-portfolio{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-#card-container{
-  display: flex;
-  overflow-x: auto;
-  height: 30vh;
-  padding: 10rem;
-  overflow-y: hidden;
-  padding-right: 20rem;
-  
-}
-@media only screen and (max-width: 768px){
-  #card-container{
-    margin-right: 0 !important;
-  }
-}
-#card-container::-webkit-scrollbar{
-  display: none;
-}
-
-/* IMAGENS 800x600 */
-.card-projeto{
-  height: 30vh;
-  min-width: 22.5vh;
-  margin-right: 2rem;
-  background-color: lightcoral;
-  border-radius: 1rem;
-  background: url(../img/cards/1.png);
-  background-position: center;
-  background-size: cover;
-}
-.finalspace{
-  height: 35vh;
-  min-width: 0.05rem;
-}
 
 /* ABOUT ME */
 
@@ -330,23 +305,29 @@ table tr{
   z-index: 1; 
 }
 
-
-
-
-
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) and (max-width: 2560px) {
+#home1{
+  padding-top: 2rem;
+  height: 80vh;
+}
+}
+@media only screen and (min-width: 1025px) {
+#containerpai
+{
+ margin-top: -15vh;
+}
+}
+@media only screen and (min-width: 769px) {
    #containerpai{
   width: 100%;
   min-height: 50vh;
   background: #202020;
   padding: 5rem;
   border-radius: 3px;
-  margin-top: -15vh;
-}
+   }
 #home1{
   padding-top: 2rem;
-  background: url(../img/bg_desktop.png) no-repeat;
+
   height: 80vh;
 }
 #home{
