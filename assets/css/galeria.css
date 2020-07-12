@@ -21,6 +21,21 @@
   .conteudo-galeria::-webkit-scrollbar{
     display: none;
   }
+
+  @media only screen and (min-width: 1024px){
+    .conteudo-galeria:hover .card-galeria{
+      opacity: 0.5;
+      
+    }
+    .conteudo-galeria:hover .card-galeria:hover{
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    
+    .card-galeria{
+      transition: opacity 0.75s ease-in-out, transform 0.35s ease-in;
+    }
+  }
   
  
   .card-galeria{
@@ -49,7 +64,7 @@
   .card-galeria:last-child{
     margin-right: 1rem;
   }
- 
+
   .conteudo-galeria{
     min-height: 30vh;
     scroll-padding-left: 1rem;
