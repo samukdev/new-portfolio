@@ -1,5 +1,12 @@
 [
   {
+    "nome": "Portfolio v2.0",
+    "alt": "Portfolio v2.0",
+    "caminho": "assets/img/cards/portfolio.webp",
+    "miniatura": "assets/img/cards/miniatura/portfolio.webp",
+    "link": "https://dribbble.com/shots/14030625-Portfolio"
+  },
+  {
     "nome": "Pomodoro Clock",
     "alt": "Pomodoro Clock App",
     "caminho": "assets/img/cards/pomodoro.webp",
