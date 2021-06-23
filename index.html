@@ -203,9 +203,8 @@
                 meu nome é<br>
                 Samuel Barbosa<br></h1>
               <p>
-                Eu sou programador. Minha maior paixão é o desenvolvimento para Web, mas não me limito apenas a isso. Eu
-                me
-                dedico bastante ao front-end. Também fico super interessado quando o assunto é Design de experiência do
+                Eu sou programador. Minha maior paixão é o desenvolvimento de interfaces, mas não me limito apenas a isso. Eu
+                me dedico bastante a camada front-end. Também fico super interessado quando o assunto é Design de experiência do
                 usuário
                 e interface do usuário.
               </p>
@@ -221,15 +220,12 @@
                   <tr>
                     <td colspan="2" class="table-title">Habilidades</td>
                   </tr>
-                  <tr>
-                    <td class="table-subtitle">Habilidade</td>
-                    <td class="table-subtitle">Nível</td>
-                  </tr>
-                  <tr v-for="habilidade in habilidades" class="table-habilidade">
-                    <td class="table-item">{{habilidade.habilidade}}</td>
+                  <tr v-for="(habilidade, index) in habilidades" class="table-habilidade">
                     <td class="table-item">
-                      <i class="fas fa-sm fa-star" :class="{'has-text-danger': index < habilidade.nivel}"
-                        v-for="(star, index) in 5"></i>
+                      <span class="has-text-danger has-text-bold">
+                        {{ "#" + (index + 1) }}
+                      </span>
+                      {{habilidade.habilidade}}
                     </td>
                   </tr>
                 </table>
