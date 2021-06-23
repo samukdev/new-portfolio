@@ -17,16 +17,28 @@
       "nivel": 4
     },
     {
+      "habilidade": "Quasar Framework",
+      "nivel": 4
+    },
+    {
+      "habilidade": "React JS",
+      "nivel": 5
+    },
+    {
+      "habilidade": "Node JS",
+      "nivel": 5
+    },
+    {
+      "habilidade": "Typescript",
+      "nivel": 5
+    },
+    {
       "habilidade": "Bulma",
       "nivel": 4
     },
     {
       "habilidade": "Bootstrap",
       "nivel": 3
-    },
-    {
-      "habilidade": "PHP",
-      "nivel": 2
     },
     {
       "habilidade": "SQL",
